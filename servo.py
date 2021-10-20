@@ -24,10 +24,12 @@ n = 0
 try:
   #while True:
     while n < 2:
-      for dc in range(dcMin,dcMax):
-        pwm.ChangeDutyCycle(dc)
-        print(dc)
-        time.sleep(0.5)
+      pwm.ChangeDutyCycle(dcMin)
+      print(dcMin)
+      time.sleep(0.5)
+      pwm.ChangeDutyCycle(dcMax)
+      print(dcMax)
+      time.sleep(0.5)
       n += 1
       print(n)
 except KeyboardInterrupt:

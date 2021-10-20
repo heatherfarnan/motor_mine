@@ -22,8 +22,8 @@ n = 0
 
 
 try:
-  while True:
-    while n<2:
+  #while True:
+    while n < 2:
       for dc in range(dcMin,dcMax):
         pwm.ChangeDutyCycle(dc)
         print(dc)

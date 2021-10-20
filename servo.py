@@ -28,7 +28,8 @@ try:
         pwm.ChangeDutyCycle(dc)
         print(dc)
         time.sleep(0.5)
-        n += 1
+      n += 1
+      print(n)
 except KeyboardInterrupt:
   print("closing")
 GPIO.cleanup()
